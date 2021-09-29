@@ -76,7 +76,14 @@ struct ContentView: View {
                     
                 })
             }
-            .navigationTitle("Photo Mania")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Photo Mania")
+                        .font(.largeTitle.bold())
+                        .accessibilityAddTraits(.isHeader)
+                }
+            }
         }
     }
 }
