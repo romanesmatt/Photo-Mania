@@ -11,6 +11,7 @@ class ViewModel: ObservableObject{
     @Published var image: Image?
     
     func fetchNewImage(){
+//        URL contains random images
         guard let url = URL(string:
                                 "https://random.imagecdn.app/500/500") else {
             return
